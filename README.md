@@ -19,6 +19,42 @@ A continuación se encuentra el listado de tecnologías a utilizar:
 
 ### Instalación
 
+1. Clonar este repositorio
+```
+git clone https://github.com/HoracioSoto/tpi.git
+```
+
+2. Ir a la carpeta e instalar el entorno virtual
+```
+virtualeenv env
+```
+
+3. Activar el entorno virtual
+
+_Linux_:
+```
+source env/bin/activate
+```
+_Windows_:
+```
+./env/Scripts/activate
+```
+
+4. Instalar las dependencias
+```
+(env) pip install -r requirements.txt
+```
+
+5. Correr las migraciones
+```
+(env) python manage.py migrate
+```
+
+6. Levantar el servicio de Django
+```
+(env) python manage.py runserver 127.0.0.1:8000
+```
+
 License
 ----
 
